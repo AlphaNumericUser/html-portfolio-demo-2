@@ -1,0 +1,507 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+.grid-autor {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio horizontalmente */
+}
+
+.grid-pages {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.grid-contact {
+    width: 50vh;
+    margin-top: 50px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.grid-about {
+    padding: 20px 40px;
+    font-size: 30px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio horizontalmente */
+}
+
+.title, .subtitle, .about-text {
+    margin: 0; /* Elimina el margen para que el texto comience cerca del borde */
+}
+
+.title {
+    font-size: 4rem;
+    text-align: start; /* Alinea el texto al inicio */
+}
+
+.subtitle {
+    font-size: 2rem;
+    text-align: start; /* Alinea el texto al inicio */
+}
+
+.about-text {
+    font-size: 1rem;
+}
+
+.pages {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    margin: 5px 0; /* Añade margen para separar los enlaces */
+    padding: 5px; /* Añade padding para aumentar el área clicable */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Añade una transición suave */
+}
+
+.pages:hover, .pages:focus {
+    color: #fff; /* Cambia el color del texto al pasar el ratón o al enfocar */
+    background-color: #007BFF; /* Cambia el fondo al pasar el ratón o al enfocar */
+}
+
+.contact {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .grid-autor, .grid-about {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 20px 10px; /* Reduce el padding */
+    }
+
+    .grid-contact {
+        width: 100%; /* Ajusta el ancho al 100% */
+        justify-content: center; /* Centra los íconos de contacto */
+    }
+
+    .title {
+        font-size: 3rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .pages {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .pages {
+        font-size: 1rem; /* Reduce aún más el tamaño de la fuente */
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Projects */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+.grid-projects-one-block {
+    padding: 20px;
+    text-align: start;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio horizontalmente */
+}
+
+.title, .subtitle, .about-text {
+    margin: 0; /* Elimina el margen para que el texto comience cerca del borde */
+    text-align: start; /* Alinea el texto al inicio */
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.about-text {
+    font-size: 1rem;
+}
+
+.pages {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    margin: 5px 0; /* Añade margen para separar los enlaces */
+    padding: 5px; /* Añade padding para aumentar el área clicable */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Añade una transición suave */
+}
+
+.pages:hover, .pages:focus {
+    color: #fff; /* Cambia el color del texto al pasar el ratón o al enfocar */
+    background-color: #007BFF; /* Cambia el fondo al pasar el ratón o al enfocar */
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    .grid-projects {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .grid-projects-one-block {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 20px 10px; /* Reduce el padding */
+    }
+
+    .title {
+        font-size: 3rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .pages {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .pages {
+        font-size: 1rem; /* Reduce aún más el tamaño de la fuente */
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Archeoexplorer */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.grid-archeoexplorer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+.grid-archeoexplorer-one-block {
+    padding: 20px;
+    text-align: start;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio horizontalmente */
+}
+
+.grid-archeoexplorer-one-block div {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid-archeoexplorer-two-block {
+    padding: 20px;
+    text-align: start;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.grid-archeoexplorer-two-block div {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-archeoexplorer-two-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen se adapte al contenedor manteniendo su proporción */
+    border-radius: 10px;
+}
+
+.grid-archeoexplorer-two-block p {
+    text-align: start;
+}
+
+.button-container {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    .grid-archeoexplorer {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .grid-archeoexplorer-one-block, .grid-archeoexplorer-two-block {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 20px 10px; /* Reduce el padding */
+    }
+
+    .grid-archeoexplorer-one-block div, .grid-archeoexplorer-two-block div {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .grid-archeoexplorer-two-block img {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .title {
+        font-size: 3rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .pages {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .pages {
+        font-size: 1rem; /* Reduce aún más el tamaño de la fuente */
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Education */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+.grid-one-block {
+    padding: 20px;
+    text-align: start;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio horizontalmente */
+}
+
+.grid-two-block {
+    padding: 20px;
+    text-align: start;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio horizontalmente */
+}
+
+.grid-two-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.grid-two-block li {
+    text-align: start;
+    padding: 5px;
+}
+
+.grid-two-block p {
+    text-align: start;
+    padding: 5px;
+}
+
+.grid-two-block a {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    margin: 5px 0; /* Añade margen para separar los enlaces */
+    padding: 5px; /* Añade padding para aumentar el área clicable */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Añade una transición suave */
+}
+
+.education-pages {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    margin: 5px 0; /* Añade margen para separar los enlaces */
+    padding: 5px; /* Añade padding para aumentar el área clicable */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Añade una transición suave */
+}
+
+.education-pages:hover, .education-pages:focus {
+    color: #fff; /* Cambia el color del texto al pasar el ratón o al enfocar */
+    background-color: #007BFF; /* Cambia el fondo al pasar el ratón o al enfocar */
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    .grid-education {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .grid-one-block, .grid-two-block {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 20px 10px; /* Reduce el padding */
+    }
+
+    .title {
+        font-size: 3rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .education-pages {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .about-text {
+        font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .education-pages {
+        font-size: 1rem; /* Reduce aún más el tamaño de la fuente */
+    }
+}
